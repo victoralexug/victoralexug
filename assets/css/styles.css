@@ -364,7 +364,7 @@ img {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
-  padding: 1rem;
+  padding: .7rem;
   border-radius: .5rem;
   border: 1.5px solid var(--second-color);
   outline: none;
