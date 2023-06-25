@@ -227,7 +227,7 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 260px;
+  width: 270px;
 }
 
 .home__blob {
@@ -235,7 +235,7 @@ img {
 }
 
 .home__blob-img {
-  width: 360px;
+  width: 370px;
 }
 
 /*BUTTONS*/
@@ -409,12 +409,15 @@ img {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
   .home {
     row-gap: 2rem;
   }
   .home__img {
     width: 200px;
+  }
+  .home__img {
+    bottom: 15%;
   }
 }
 
@@ -434,7 +437,7 @@ img {
   }
   .home__img {
     width: 300px;
-    bottom: 25%;
+    bottom: 35%;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
