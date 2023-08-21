@@ -5,200 +5,97 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
+        <link rel="stylesheet" href="assets/css/style-switcher.css">
+       
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' rel='stylesheet'>
-
+        
         <title>victoralexug</title>
     </head>
     <body>
         <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Victor Eze</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
+            <nav class="nav">
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
+                
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="close-button">
+                        <i class='fa fa-remove'></i>
+                    </div>
+                    
+                    <div class="nav__logo">
+                        <a href="#" ><span>V</span>ictor</a>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active"><i class="fa fa-home"></i>Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"><i class="fa fa-user"></i>About</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link"><i class="fa fa-briefcase"></i>Projects</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link"><i class="fa fa-list"></i>Services</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"><i class="fa fa-comment"></i>Contact</a></li>
+                    </ul>
+                </div> 
+                
+                <!--===== FOOTER =====-->
+                <footer class="footer">
+                    <p class="footer__copy">Copyright &#169; <a id='footer-link' href="https://github.com/victoralexug" target='blank'>Victor</a>. 2023</p>
+                </footer>
             </nav>
-        </header>
 
         <main class="l-main">
-            <!--===== HOME =====-->
-  <section class="home bd-grid" id="home">
-                <div class="home__data" >
-                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Victor</span><br><i style="font-size: 35px;">-</i><i style="font-size: 27px;" class="typewrite" data-period="500" data-type='[ "Frontend developer", "Wordpress freelancer", "React engineer"]'>
-                    </i></h1>
-                    
-                    
 
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://github.com/victoralexug" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://twitter.com/victoralexug" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                    <a href="https://instagram.com/victoralexug" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://facebook.com/victoralexug" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile1.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </section>
-
-       
-     <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">As a web developer my specialties include but are not limited to:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fa fa-code skills__icon'></i>
-                                <span class="skills__name">Web development</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-wordpress skills__icon'></i>
-                                <span class="skills__name">wordpress development</span>
-                            </div>
-                            <div class="skills__bar skills__html">   
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fa fa-pencil-square skills__icon' ></i>
-                                <span class="skills__name">wordpress customization</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">web designing</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='fa fa-file-code skills__icon'></i>
-                                <span class="skills__name">landing page</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href='https://victoralexug.github.io/the-classic-man/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/The-classic-man.PNG' alt='project'/>
-                        <p class='project-title'>
-                            <span class="code">&lt;</span>
-                        The Classic Man
-                          <span class="code">&#47;&gt;</spa></p>
-                      </a>
-
-                    <a href='https://victoralexug.github.io/beats-solo/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/beats-solo.jpg' alt='project'/>
-                        <p class='project-title'><span class="code">&lt;</span>
-                        Beats-solo
-                          <span class="code">&#47;&gt;</spa></p>
-                      </a>
-
-                    <a href='https://victoralexug.github.io/youtube-clone/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/youtube-clone.jpg' alt='project'/>
-                        <p class='project-title'><span class="code">&lt;</span>
-                        Youtube clone
-                          <span class="code">&#47;&gt;</span></p>
-                      </a>
-                    
-                    <a href='https://victoralexug.github.io/apptheme/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/apptheme.jpg' alt='project'/>
-                        <p class='project-title'>
-                            <span class="code">&lt;</span>
-                        AppTheme
-                          <span class="code">&#47;&gt;</spa></p>
-                      </a>
-                      <a href='https://victoralexug.github.io/105_Men/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/105men.jpg'/>
-                        <p class='project-title'>
-                            <span class="code">&lt;</span>
-                        105_Men
-                          <span class="code">&#47;&gt;</spa></p>
-                      </a>
-                      <a href='https://victoralexug.github.io/luckystar-designs/' target='_blank'  class="project project-tile work__img">
-                        <img class='project-image' src='assets/img/luckystar.jpg'/>
-                        <p class='project-title'>
-                            <span class="code">&lt;</span>
-                         Email Signature
-                          <span class="code">&#47;&gt;</spa></p>
-                      </a>
-                </div>
-            </section>
-            
             <!--===== CONTACT =====-->
-            <section class="contact section" id="contact" style="background-color: var(--second-color);">
-                <h2 class="section-title">Contact</h2>
+            <section class="contact section" id="contact">
+                <div class="row">
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+                <h3 class="contact-title">Have You Any Questions ?</h3>
+                <h4 class="contact-sub-title">CONNECT WITH ME ON :</h4>
+
+                <div class="row">
+                    <div class="contact-info-item">
+                        <a href="https://github.com/victoralexug" class="icon">
+                            <i class='bx bxl-linkedin' ></i>
+                            <h4>LinkedIn</h4>
+                        </a>
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="https://twitter.com/victoralexug" class="icon">
+                            <i class='bx bxl-twitter' ></i>
+                            <h4>Twitter</h4>
+                        </a> 
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="https://instagram.com/victoralexug" class="icon">
+                            <i class='bx bxl-instagram' ></i>
+                            <h4>instagram</h4>
+                        </a>
+                    </div>
+                    <div class="contact-info-item">
+                        <a href="https://facebook.com/victoralexug" class="icon">
+                            <i class='bx bxl-facebook' ></i>
+                            <h4>Facebook</h4>
+                        </a> 
+                    </div>
+                </div>
+                <h3 class="contact-title">SEND ME AN EMAIL</h3>
+                <h4 class="contact-sub-title">I'M VERY RESPONSIVE TO MESSAGES</h4> 
 
                 <div class="contact__container bd-grid">
-                    <h3 style="color: #fff; text-align: center;">Thanks, We will keep in touch</h3>
+                    <h3 class="success">Thanks, We will keep in touch</h3>
                 </div>
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__social">
-                <a href="https://www.facebook.com" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/victoralexug" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://www.twitter.com/victoralexug" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <div class="style-switcher">
+            <div class="day-night s-icon">
+                <i class="fas "></i>
             </div>
-            <p class="footer__copy">Copyright &#169; <a id='footer-link' href="https://github.com/victoralexug" target='blank'>Victor</a>. 2021</p>
-        </footer>
-
+        </div>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
