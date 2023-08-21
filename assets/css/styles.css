@@ -837,13 +837,15 @@ img {
 
   /* .home__data, */
   .home__title .typewrite,
-  .quote span,
+  .quote,
   .skills,
   .personal-info{
     flex: 0 0 100%;
     max-width: 100%;
   }
- 
+  .logo-icons{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -869,8 +871,8 @@ img {
   .nav__toggle {
     display: block;
     position: fixed;
-    top: 0;
-    left: 5px;
+    top: 8px;
+    left: 8px;
     width: 30px;
     text-align: center;
     background: var(--bg-black-900);
