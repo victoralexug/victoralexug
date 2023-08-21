@@ -871,8 +871,8 @@ img {
   .nav__toggle {
     display: block;
     position: fixed;
-    top: 8px;
-    left: 8px;
+    top: 0;
+    left: 5px;
     width: 30px;
     text-align: center;
     background: var(--bg-black-900);
