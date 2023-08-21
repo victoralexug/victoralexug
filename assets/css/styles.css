@@ -854,6 +854,8 @@ img {
     position: fixed;
     top: 0;
     left: 5px;
+    width: 30px;
+    text-align: center;
     background: var(--bg-black-900);
     color: var(--first-color);
     font-size: 1.5rem;
@@ -896,7 +898,7 @@ img {
 @media (max-width:567px){
 
   .info-item{
-    padding-right: 0px;
+    padding-right: -10px;
     padding-left: 0px;
   }
 }
