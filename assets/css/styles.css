@@ -885,10 +885,18 @@ img {
 }
 
 .about, .projects, .contact, .services{
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
 .section.show{
   left: 270px;
 }
+}
+
+@media (max-width:567px){
+
+  .info-item{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
