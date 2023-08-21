@@ -886,7 +886,7 @@ img {
   left: 0;
 }
 
-.about, .projects, .contact, .services{
+.about, .projects, .contact, .service{
   padding-bottom: 70px;
 }
 
@@ -898,7 +898,7 @@ img {
 @media (max-width:567px){
 
   .info-item{
-    padding-right: -10px;
+    padding-right: auto;
     padding-left: 0px;
   }
 }
