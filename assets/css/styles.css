@@ -85,6 +85,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--first-color);
 }
 
 img {
@@ -336,11 +337,13 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--text-black-900);
-  padding-right: 5px;
+  padding-right: 15px;
+  transition: transform 0.3s ease-out;
 }
 
 .home__social-icon:hover {
   color: var(--first-color);
+  transform: translateY(5px);
 }
 
 .home__img {
@@ -366,18 +369,51 @@ img {
   max-width: 80%;
   padding-left: 35px;
   padding-right: 15px;
-  font-size: var(--small-font-size);
   margin-top: 0;
 }
 
 .quote p{
   color: var(--first-color);
+  font-size: var(--small-font-size);
 }
 .quote span{
   color: var(--text-black-900);
+  font-size: var(--small-font-size);
   font-family: 'Clicker Script', cursive;
   font-weight: 500;
 }
+
+.logos{
+  margin: 10px;
+  color: var(--bg-black-100);
+}
+
+.logo{
+  margin: 0;
+  padding: 0;
+  color: var(--bg-black-900);
+  transition: transform 0.3s ease-out;
+}
+
+.logo:hover{
+  color: var(--text-black-900);
+  opacity: 0.7;
+  transform: translateY(10px);
+  text-align: center;
+}
+
+.logo-text{
+  font-size: 12px;
+  margin: 0;
+}
+
+.logos img{
+  width: 60px;
+  height: 40px;
+  padding: 0 15px 15px 15px;
+}
+
+
 
 
 /*BUTTONS*/
@@ -438,6 +474,10 @@ img {
   max-width: 50%;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.info-item a{
+  color: var(--text-black-900);
 }
 
 .info-item p{
@@ -677,15 +717,16 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 60px;
-  transition: 0.5s;
-}
-
-.contact-info-item:hover {
-  transform: scale(1.1);
 }
 
 .contact-info-item .icon{
   display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-info-item .icon:hover {
+  opacity: 0.9;
+  transform: translateY(8px);
 }
 
 .contact-info-item .icon .bx{
@@ -863,7 +904,7 @@ img {
 }
 
 .about, .projects, .contact, .service{
-  padding-bottom: 70px;
+  padding-bottom: 80px;
 }
 
 .section.show{
@@ -880,22 +921,7 @@ img {
     padding-right: auto;
     padding-left: 0px;
   }
-}
-
-.quuote {
-  flex: 0 0 80%;
-  max-width: 80%;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: var(--small-font-size);
-  margin-top: 0;
-}
-
-.quote p{
-  color: var(--first-color);
-}
-.quote span{
-  color: var(--text-black-900);
-  font-family: 'Clicker Script', cursive;
-  font-weight: 500;
+  .intro-text{
+    display: none;
+  }
 }
