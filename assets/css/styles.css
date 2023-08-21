@@ -301,8 +301,8 @@ img {
 }
 
 .home__data {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 70%;
+  max-width: 70%;
   padding-left: 35px;
   padding-right: 15px;
   margin-top: 60px;
@@ -323,6 +323,7 @@ img {
 
 .home__title .typewrite{
   font-size: var(--small-font-size);
+  color: var(--first-color);
 }
 
 .home__social {
@@ -344,8 +345,8 @@ img {
 
 .home__img {
   position: relative;
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 30%;
+  max-width: 30%;
   text-align: center;
   padding-left: 10px;
   padding-right: 20px;
@@ -360,48 +361,22 @@ img {
   width: 400px;
 }
 
-@media screen and (max-width: 860px) {
-  .l-main{
-   padding-left: 0px;
- }
-
- .home {
-   max-height: 100vh;
- }
+.quote {
+  flex: 0 0 80%;
+  max-width: 80%;
+  padding-left: 35px;
+  padding-right: 15px;
+  font-size: var(--small-font-size);
+  margin-top: 0;
 }
 
-@media screen and (min-width: 576px) {
- .home__social {
-   padding-top: 0;
-   padding-bottom: 2.5rem;
-   flex-direction: row;
-   align-self: flex-end;
- }
- .home__social-icon {
-   margin-bottom: 0;
-   margin-right: var(--mb-4);
- }
- .home__img {
-   width: 300px;
-   bottom: 35%;
- }
+.quote p{
+  color: var(--first-color);
 }
-
-@media screen and (min-width: 860px) {
- .nav__toggle {
-   display: none;
- }
-
- body {
-   margin: 0;
- }
-} 
-
-@media screen and (min-width: 1024px) {
- .home__img {
-   width: 380px;
-   bottom: 20%;
- }
+.quote span{
+  color: var(--text-black-900);
+  font-family: 'Clicker Script', cursive;
+  font-weight: 500;
 }
 
 
@@ -821,6 +796,7 @@ img {
 
   /* .home__data, */
   .home__title .typewrite,
+  .quote,
   .skills,
   .personal-info{
     flex: 0 0 100%;
@@ -896,9 +872,30 @@ img {
 }
 
 @media (max-width:567px){
+  .home__img {
+    padding-top: 30px;
+  }
 
   .info-item{
     padding-right: auto;
     padding-left: 0px;
   }
+}
+
+.quuote {
+  flex: 0 0 80%;
+  max-width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: var(--small-font-size);
+  margin-top: 0;
+}
+
+.quote p{
+  color: var(--first-color);
+}
+.quote span{
+  color: var(--text-black-900);
+  font-family: 'Clicker Script', cursive;
+  font-weight: 500;
 }
