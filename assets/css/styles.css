@@ -407,9 +407,9 @@ img {
   margin: 0;
 }
 
-.logos img{
-  width: 60px;
-  height: 40px;
+.logos .logo img{
+  max-width: 60px;
+  max-height: 40px;
   padding: 0 15px 15px 15px;
 }
 
@@ -837,7 +837,7 @@ img {
 
   /* .home__data, */
   .home__title .typewrite,
-  .quote,
+  .quote span,
   .skills,
   .personal-info{
     flex: 0 0 100%;
