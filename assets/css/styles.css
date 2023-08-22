@@ -114,45 +114,37 @@ img {
 
 .nav__logo {
   position: absolute;
+  left: 70px;
   top: 50px;
+  width: 50px;
+  height: 50px;
   font-size: var(--h2-font-size);
   text-transform: capitalize;
+  text-align: center;
 }
 
-.nav__logo a{
-  color: var(--text-black-900);
-  padding: 15px 20px;
-  font-size: var(--h2-font-size);
-  font-weight: 700;
-  letter-spacing: 5px;
+.nav__logo .pos{
   position: relative;
 }
 
-.nav__logo a span{
-  font-family: 'Clicker Script', cursive;
-  font-size: var(--h2-font-size);
-}
-
-.nav__logo a::before{
+.nav__logo .pos::before{
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  height: 40px;
   border-bottom: 5px solid var(--first-color);
   border-left: 5px solid var(--first-color);
-  bottom: 0;
-  left: 0;
+  bottom: 4px;
+  left: -10px;
 }
 
-.nav__logo a::after{
+.nav__logo .pos::after{
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  height: 40px;
   border-top: 5px solid var(--first-color);
   border-right: 5px solid var(--first-color);
-  top: 0;
-  right: 0;
+  top: -10px;
+  right: -10px;
 }
 
 .nav__list{
@@ -902,6 +894,9 @@ img {
     left: 0;
   }
 
+  .contact{
+    margin-bottom: 350px;
+  }
   /*=== Show menu ===*/
 .show {
   left: 0;
