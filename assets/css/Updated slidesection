@@ -227,7 +227,7 @@ img {
   animation: slideSection 1s ease;
 }
 
-@keyframes sldeSection {
+@keyframes slideSection {
   0%{
     transform: translateX(100%);
   }
