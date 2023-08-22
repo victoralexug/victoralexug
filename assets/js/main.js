@@ -155,13 +155,11 @@ const navLink = document.querySelectorAll('.nav__link'),
      close = document.querySelector('.close-button') 
 
 function linkAction(){
-    if(screen.width > 860) {
-        const navMenu = document.getElementById('nav-menu')
-        // When we click on each nav__link, we remove the show-menu class
-        navMenu.classList.remove('show')
-        for(let i=0; i<totalSection; i++){
-            allSection[i].classList.remove('show');
-        }
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show')
+    for(let i=0; i<totalSection; i++){
+        allSection[i].classList.remove('show');
     }
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
