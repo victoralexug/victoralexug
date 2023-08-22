@@ -18,7 +18,7 @@
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --medium-font-size: 1.1rem;
+  --medium-font-size: 1.25rem;
   --normal-font-size: .9rem;
   --smaller-font-size: .75rem;
   /*===== Margenes =====*/
@@ -35,7 +35,7 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --medium-font-size: 1.359rem;
+    --medium-font-size: 1.559rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
