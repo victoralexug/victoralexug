@@ -329,6 +329,7 @@ img {
   font-size: var(--meduim-font-size);
   font-family: 'Clicker Script', cursive;
   font-weight: 500;
+  padding-left: 15px;
 }
 
 .home__img {
@@ -773,7 +774,7 @@ img {
   color: var(--first-color);
   text-align: center;
   font-weight: var(--font-semi);
-  margin-top: 100%;
+  margin-top: 95%;
 }
 .footer__copy {
   font-size: 12px;
