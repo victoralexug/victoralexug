@@ -18,7 +18,7 @@
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
-  --medium-font-size: 1.25rem;
+  --medium-font-size: 2.2rem;
   --normal-font-size: .9rem;
   --smaller-font-size: .75rem;
   /*===== Margenes =====*/
@@ -35,7 +35,7 @@
   :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
-    --medium-font-size: 1.559rem;
+    --medium-font-size: 2.5rem;
     --normal-font-size: 1rem;
     --smaller-font-size: .875rem;
   }
@@ -773,8 +773,7 @@ img {
   color: var(--first-color);
   text-align: center;
   font-weight: var(--font-semi);
-  position: fixed;
-  bottom: 0;
+  margin-top: 100%;
 }
 .footer__copy {
   font-size: 12px;
@@ -792,13 +791,13 @@ img {
 
 @media screen and (max-width: 1068px) {
   .section-title{
-    padding-top: 40px;
+    padding-top: 25px;
   }
   .section-title::before {
-    top: 3.5rem;
+    top: 3rem;
   }
   .section-title::after {
-    top: 4rem;
+    top: 3.5rem;
   }
 }
 
@@ -854,6 +853,7 @@ img {
     padding: 2rem;
     background: var(--bg-black-100);
     transition: .5s;
+    
   }
   
   .nav__list{
@@ -863,8 +863,8 @@ img {
   .nav__toggle {
     display: block;
     position: fixed;
-    top: 0;
-    left: 5px;
+    top: 10px;
+    left: 20px;
     width: 30px;
     text-align: center;
     background: var(--bg-black-900);
@@ -895,7 +895,7 @@ img {
 
   
   .section.active{
-    animation: slideSection 3s ease;
+    animation: sldeSection 3s ease;
   }
 
 
@@ -907,16 +907,16 @@ img {
   left: 0;
 }
 
-.section.show{
+/* .section.show{
   left: 270px;
-}
+} */
+
 }
 
 @media (max-width:567px){
-  .home__img {
-
-    /* display: none; */
-  }
+  /* .home__img {
+    display: none;
+  } */
 
   .info-item{
     padding-right: auto;

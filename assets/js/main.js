@@ -65,13 +65,14 @@ const nav = document.querySelector('.nav__list'),
          a.addEventListener('click', function(){
             
             removeBackSection();
-
-            for(let j=0; j<totalNavList; j++){
-                if(navList[j].querySelector('a').classList.contains('active')){
-                    addBackSection(j);
-                    //allSection[j].classList.add('back-section');
+            if(screen.width > 860) {
+                for(let j=0; j<totalNavList; j++){
+                    if(navList[j].querySelector('a').classList.contains('active')){
+                        addBackSection(j);
+                        //allSection[j].classList.add('back-section');
+                    }
+                    navList[j].querySelector('a').classList.remove('active');
                 }
-                navList[j].querySelector('a').classList.remove('active');
             }
              this.classList.add('active')
              showSection(this);
@@ -154,44 +155,18 @@ const navLink = document.querySelectorAll('.nav__link'),
      close = document.querySelector('.close-button') 
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
-    for(let i=0; i<totalSection; i++){
-        allSection[i].classList.remove('show');
+    if(screen.width > 860) {
+        const navMenu = document.getElementById('nav-menu')
+        // When we click on each nav__link, we remove the show-menu class
+        navMenu.classList.remove('show')
+        for(let i=0; i<totalSection; i++){
+            allSection[i].classList.remove('show');
+        }
     }
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 close.addEventListener('click', linkAction)
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-/*===== SCROLL REVEAL ANIMATION =====*/
-// const sr = ScrollReveal({
-//     origin: 'side',
-//     distance: '60px',
-//     duration: 2000,
-//     delay: 200,
-//     reset: true
-// });
-
-// sr.reveal('.contact-title, .contact-sub-title',{delay: 100}); 
-// sr.reveal(' .about-text',{ delay: 200}); 
-// sr.reveal('.project, .skills__container',{interval: 300});
-// sr.reveal('.home__img, .personal-info',{delay: 500});
-
-// const tr = ScrollReveal({
-//     origin: 'top',
-//     distance: '60px',
-//     duration: 2000,
-//     delay: 200,
-//     reset: true
-// });
-
-// tr.reveal('.section-title, .home__data',{delay: 100}); 
-// tr.reveal('.home__social-icon, .skill-item, .contact-info-item, .service-item',{ interval: 200}); 
-// tr.reveal('.project-button, .contact__input',{interval: 300});
-// tr.reveal('.home__img, .contact__form',{delay: 500});
 
 /*===== DARK AND LIGHT MODE =====*/
 const dayNight = document.querySelector('.day-night');
@@ -212,3 +187,58 @@ window.addEventListener('load', () => {
     }
 })
 
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+    if(screen.width <= 860) {
+        //code goes 
+        sections.forEach(current =>{
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute('id')
+    
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+            }else{
+                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+            }
+        })
+    }
+}
+window.addEventListener('scroll', scrollActive)
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+
+
+    //code goes here
+    const sr = ScrollReveal({
+        origin: 'side',
+        distance: '60px',
+        duration: 2000,
+        delay: 200,
+        //reset: true
+    });
+
+  if(screen.width <= 860) {
+    sr.reveal('.contact-title, .contact-sub-title',{delay: 100}); 
+    sr.reveal(' .about-text',{ delay: 200}); 
+    sr.reveal('.project, .skills__container',{interval: 300});
+    sr.reveal('.home__img, .personal-info',{delay: 500});
+}
+
+const tr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+    //reset: true
+});
+
+if(screen.width <= 860) {
+    tr.reveal('.section-title, .home__data',{delay: 100}); 
+    tr.reveal('.home__social-icon, .skill-item, .contact-info-item,.logos img, .service-item',{ interval: 200}); 
+    tr.reveal('.project-button, .contact__input',{interval: 300});
+    tr.reveal('.home__img, .contact__form',{delay: 500});
+}
