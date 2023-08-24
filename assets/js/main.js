@@ -232,8 +232,14 @@ const tr = ScrollReveal({
     reset: true
 });
 
-    tr.reveal('.section-title, .home__data',{delay: 100}); 
+    tr.reveal('.section-title, .home__data, .success',{delay: 100}); 
     tr.reveal('.home__social-icon, .skill-item, .contact-info-item,.logos img, .service-item',{ interval: 200}); 
     tr.reveal('.project-button, .contact__input',{interval: 300});
     tr.reveal('.home__img, .contact__form',{delay: 500});
 
+
+    setTimeout(function(){
+
+        document.getElementById('success').className += ' hidden';
+    
+    }, 5000);

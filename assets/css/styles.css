@@ -784,6 +784,10 @@ img {
   color: var(--first-color); 
   text-align: center;
 }
+
+.hidden{
+  display: none;
+}
 /* ===== FOOTER =====*/
 .footer {
   color: var(--first-color);
