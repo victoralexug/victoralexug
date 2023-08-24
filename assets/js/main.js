@@ -209,8 +209,6 @@ window.addEventListener('scroll', scrollActive)
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 
-
-    //code goes here
     const sr = ScrollReveal({
         origin: 'side',
         distance: '60px',
@@ -219,12 +217,12 @@ window.addEventListener('scroll', scrollActive)
         reset: true
     });
 
-  if(screen.width <= 860) {
+   
     sr.reveal('.contact-title, .contact-sub-title',{delay: 100}); 
     sr.reveal(' .about-text',{ delay: 200}); 
     sr.reveal('.project, .skills__container',{interval: 300});
     sr.reveal('.home__img, .personal-info',{delay: 500});
-}
+
 
 const tr = ScrollReveal({
     origin: 'top',
@@ -234,9 +232,8 @@ const tr = ScrollReveal({
     reset: true
 });
 
-if(screen.width <= 860) {
     tr.reveal('.section-title, .home__data',{delay: 100}); 
     tr.reveal('.home__social-icon, .skill-item, .contact-info-item,.logos img, .service-item',{ interval: 200}); 
     tr.reveal('.project-button, .contact__input',{interval: 300});
     tr.reveal('.home__img, .contact__form',{delay: 500});
-}
+
