@@ -177,11 +177,11 @@ dayNight.addEventListener('click', () =>{
 window.addEventListener('load', () => {
     if(document.body.classList.contains('dark'))
     {
-        dayNight.querySelector('i').classList.add('fa-moon')
+        dayNight.querySelector('i').classList.add('fa-sun')
     }
     else
     {
-        dayNight.querySelector('i').classList.add('fa-sun')
+        dayNight.querySelector('i').classList.add('fa-moon')
     }
 })
 
@@ -216,7 +216,7 @@ window.addEventListener('scroll', scrollActive)
         distance: '60px',
         duration: 2000,
         delay: 200,
-        //reset: true
+        reset: true
     });
 
   if(screen.width <= 860) {
@@ -231,7 +231,7 @@ const tr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-    //reset: true
+    reset: true
 });
 
 if(screen.width <= 860) {

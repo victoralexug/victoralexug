@@ -67,7 +67,7 @@ body.dark{
   --bg-black-900: #151515;
   --bg-black-100: #222222;
   --bg-black-50: #393939;
-  --text-black-900: #ffffff;
+  --text-black-900: #e9e9e9;
   --text-black-700: #e9e9e9;
   --rbg-color: #393939;
   --code: #eeeeee;
@@ -122,7 +122,7 @@ img {
 
 .nav__logo {
   position: absolute;
-  left: 70px;
+  left: 30%;
   top: 50px;
   width: 50px;
   height: 50px;
@@ -139,8 +139,8 @@ img {
   content: '';
   position: absolute;
   height: 40px;
-  border-bottom: 5px solid var(--first-color);
-  border-left: 5px solid var(--first-color);
+  border-bottom: 5px solid var(--text-black-700);
+  border-left: 5px solid var(--text-black-700);
   bottom: 4px;
   left: -10px;
 }
@@ -149,8 +149,8 @@ img {
   content: '';
   position: absolute;
   height: 40px;
-  border-top: 5px solid var(--first-color);
-  border-right: 5px solid var(--first-color);
+  border-top: 5px solid var(--text-black-700);
+  border-right: 5px solid var(--text-black-700);
   top: -10px;
   right: -10px;
 }
@@ -335,6 +335,14 @@ img {
   font-weight: 500;
 }
 
+.before-img{
+  display: block;
+}
+
+.after-img{
+  display: none;
+}
+
 .home__img {
   position: relative;
   flex: 0 0 30%;
@@ -356,8 +364,12 @@ img {
 .logos{
   flex: 0 0 100%;
   width: 100%;
-  margin: 10px 0 0 30px;
   color: var(--bg-black-100);
+  margin: 10px 0 0 0;
+}
+
+.after{
+  margin: 10px 0 0 30px;
 }
 
 .logo{
@@ -902,6 +914,13 @@ img {
     animation: sldeSection 3s ease;
   }
 
+  .before-img{
+    display: none;
+  }
+  
+  .after-img{
+    display: block;
+  }
 
   .contact{
     margin-bottom: 350px;
