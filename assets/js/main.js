@@ -214,7 +214,7 @@ const tr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-    reset: true
+    //reset: true
 });
 
     tr.reveal('.section-title, .home__data, .success',{delay: 100}); 
@@ -234,7 +234,7 @@ const lr = ScrollReveal({
         distance: '60px',
         duration: 2000,
         delay: 200,
-        reset: true
+        //reset: true
     });
 
    
@@ -250,7 +250,7 @@ const rr = ScrollReveal({
         distance: '60px',
         duration: 2000,
         delay: 200,
-        reset: true
+        //reset: true
     });
 
    
