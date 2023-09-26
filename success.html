@@ -14,14 +14,17 @@
         <title>victoralexug</title>
     </head>
     <body class="dark">
+        <div class="spinner-container">
+            <div id="loading-spinner" class="spinner"></div>
+        </div>
+        
+        <div id="page-content">
         <!--===== HEADER =====-->
             <nav class="nav">
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
-
                 
-
                 <div class="nav__menu" id="nav-menu">
                     <div class="close-button">
                         <i class='fa fa-remove'></i>
@@ -35,32 +38,30 @@
                                 </mask>
                                 <g mask="url(#mask0)">
                                     <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                                    <image class="home__blob-img" x="60" y="40" href="assets/img/profile1.png"/>
+                                    <image class="home__blob-img" x="60" y="40" href="assets/img/profile1.png" loading="lazy"/>
                                 </g>
                             </svg>
                         </div>
                     </div>
 
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link"><i class="fa fa-home"></i>Home</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active"><i class="fa fa-home"></i>Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link"><i class="fa fa-user"></i>About</a></li>
                         <li class="nav__item"><a href="#projects" class="nav__link"><i class="fa fa-briefcase"></i>Portfolio</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link"><i class="fa fa-list"></i>Services</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link active"><i class="fa fa-comment"></i>Contact</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"><i class="fa fa-comment"></i>Contact</a></li>
                     </ul>
 
+                <!--===== FOOTER =====-->
                     <div class="footer">
                         <p class="footer__copy">Copyright &#169; <a id='footer-link' href="https://github.com/victoralexug" target='blank'>Victor</a>. 2023</p>
                     </div>
-                </div> 
-                
-                <!--===== FOOTER =====-->
-                
+                </div>                
             </nav>
 
         <main class="l-main">
             <!--===== HOME =====-->
-            <section class=" section home " id="home">
+            <section class=" section active home " id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home__data" >
@@ -157,13 +158,15 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#contact" data-section-index="0" class="button  about-me">Contact Me</a>
+                    <div class="home-contact">
+                        <a href="#contact" data-section-index="0" class="button  contact-me">Contact Me</a>
     
-                    <div class="home__social">
-                        <a href="https://github.com/victoralexug" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                        <a href="https://www.linkedin.com/in/victor-eze-272872270/" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://twitter.com/victoralexug" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                        <a href="https://instagram.com/victoralexug" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                        <div class="home__social">
+                            <a href="https://github.com/victoralexug" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="https://www.linkedin.com/in/victor-eze-272872270/" class="home__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://twitter.com/victoralexug" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                            <a href="https://instagram.com/victoralexug" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -179,8 +182,8 @@
                         <div class="about-content">
                             <div class="row">
                                 <div class="about-text">
-                                    <h3>Victor Eze - <span>Frontend React developer</span></h3>
-                                    <p>I am an excellent and motivated frontend react developer. Proficient in website development,  designing/redesigning, debugging, customization and optimation. Skilled in developing dynamic web applications using modern frontend technologies, frameworks and best practices. Impelled by a detail-oriented personality and a passion for excellence.</p>
+                                    <h3 class="about-header">Victor Eze - <span>Frontend React developer</span></h3>
+                                    <p class="about-intro">I am an excellent and motivated frontend react developer. Proficient in website development,  designing/redesigning, debugging, customization and optimation. Skilled in developing dynamic web applications using modern frontend technologies, frameworks and best practices. Impelled by a detail-oriented personality and a passion for excellence.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -248,7 +251,6 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -265,7 +267,7 @@
                 </div>
 
                 <div class="project__container bd-grid">
-                    <a href='https://victoralexug.github.io/classic-man/' target='_blank'  class="project  project__tile">
+                    <a href='https://victoralexug.github.io/classic-man/' target='_blank'  class="project project-right project__tile">
                         <img class='project-image' src='assets/img/The-classic-man.PNG' alt='project'/>
                         <p class='project-title'>
                             <span class="code">&lt;</span>
@@ -273,19 +275,19 @@
                           <span class="code">&#47;&gt;</spa></p>
                       </a>
 
-                    <a href='https://victoralexug.github.io/beats-solo/' target='_blank'  class="project project-tile project__tile">
+                    <a href='https://victoralexug.github.io/beats-solo/' target='_blank'  class="project project-left project-tile project__tile">
                         <img class='project-image' src='assets/img/beats-solo.jpg' alt='project'/>
                         <p class='project-title'><span class="code">&lt;</span>
                         Beats-solo
                           <span class="code">&#47;&gt;</spa></p>
                       </a>
 
-                    <a href='https://victoralexug.github.io/youtube-clone/' target='_blank'  class="project project-tile project__tile">
+                    <a href='https://victoralexug.github.io/youtube-clone/' target='_blank'  class="project project-right project-tile project__tile">
                         <img class='project-image' src='assets/img/youtube-clone.jpg' alt='project'/>
                         <p class='project-title'><span class="code">&lt;</span>
                         Youtube clone
                           <span class="code">&#47;&gt;</span></p>
-                    </a>
+                      </a>
                     
                     <a href='https://victoralexug.github.io/apptheme/' target='_blank'  class="project project-left project-tile project__tile">
                         <img class='project-image' src='assets/img/portfolio.PNG' alt='project'/>
@@ -294,15 +296,15 @@
                         Portfolio website
                           <span class="code">&#47;&gt;</spa></p>
                     </a>
-                    
-                    <a href='https://victoralexug.github.io/105_Men/' target='_blank'  class="project project-tile project__tile">
+
+                      <a href='https://victoralexug.github.io/105_Men/' target='_blank'  class="project project-right project-tile project__tile">
                         <img class='project-image' src='assets/img/105men.jpg'/>
                         <p class='project-title'>
                             <span class="code">&lt;</span>
                         105_Men
                           <span class="code">&#47;&gt;</spa></p>
                       </a>
-                      <a href='https://victoralexug.github.io/luckystar-designs/' target='_blank'  class="project project-tile project__tile">
+                      <a href='https://victoralexug.github.io/luckystar-designs/' target='_blank'  class="project project-left project-tile project__tile">
                         <img class='project-image' src='assets/img/luckystar.jpg'/>
                         <p class='project-title'>
                             <span class="code">&lt;</span>
@@ -322,7 +324,7 @@
                 </div>
           
                 <div class="skills__container">
-                    <h3 class="service-title">Profesional Skills</h3>
+                    <h3 class="service-title">Profesional Services</h3>
                     <p class="service-sub-title">As a web developer my specialties include, but are not limited to :</p>
                 </div>
 
@@ -453,5 +455,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        </div>
     </body>
 </html>

@@ -53,6 +53,18 @@ window.onload = function() {
 };
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingSpinner = document.getElementById("loading-spinner");
+    const pageContent = document.getElementById("page-content");
+
+    // Hide the loading spinner and show the page content when the page has loaded
+    window.addEventListener("load", function () {
+        loadingSpinner.style.display = "none";
+        pageContent.style.display = "block";
+    });
+});
+
+
 /*===== NAV BAR =====*/
 // const nav = document.querySelector('.nav__list'),
 //     navList = nav.querySelectorAll('li'),
@@ -136,6 +148,9 @@ window.onload = function() {
 
 
 /*===== MENU SHOW =====*/ 
+const allSection = document.querySelectorAll('.section'),
+      totalSection = allSection.length;
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -153,7 +168,7 @@ showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link'),
-     close = document.querySelector('.close-button') 
+     close = document.querySelector('.close-button')
 
 function linkAction(){
         const navMenu = document.getElementById('nav-menu')
@@ -191,8 +206,7 @@ const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
     const scrollY = window.pageYOffset;
-    // if(screen.width <= 860) {
-        //code goes 
+    // if(screen.width <= 860) { 
         sections.forEach(current =>{
             const sectionHeight = current.offsetHeight
             const sectionTop = current.offsetTop - 50;
@@ -208,6 +222,7 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const tr = ScrollReveal({
     origin: 'top',
@@ -218,16 +233,9 @@ const tr = ScrollReveal({
 });
 
     tr.reveal('.section-title, .home__data, .success',{delay: 100}); 
-    tr.reveal('.skill-item, .contact-info-item,.logos img, .service-item',{ interval: 100}); 
+    tr.reveal('.home__social-icon, .skill-item, .contact-info-item,.logos img, .service-item',{ interval: 100}); 
     tr.reveal('.project-button, .contact__input',{interval: 300});
     tr.reveal('.home__img, .contact__form',{delay: 500});
-
-
-    setTimeout(function(){
-
-        document.getElementById('success').className += ' hidden';
-    
-    }, 5000);
 
 const lr = ScrollReveal({
         origin: 'left',
@@ -238,10 +246,10 @@ const lr = ScrollReveal({
     });
 
    
-    lr.reveal('.project-desc, .contact-title',{delay: 100}); 
-    lr.reveal('.home__social-icon',{ delay: 200}); 
+    lr.reveal('.about-header, .project-desc, .contact-title',{delay: 100}); 
+    lr.reveal('',{ delay: 200}); 
     lr.reveal('.project-left, .service-sub-title',{interval: 300});
-    lr.reveal('.personal-info',{delay: 500});
+    lr.reveal('.home-contact, .footer, .personal-info',{delay: 500});
 
 
 
@@ -255,8 +263,8 @@ const rr = ScrollReveal({
 
    
     rr.reveal('.contact-sub-title',{delay: 100}); 
-    rr.reveal('.about-text',{ delay: 200}); 
+    rr.reveal('.about-intro',{ delay: 200}); 
     rr.reveal('.project-right, .service-title',{interval: 300});
-    rr.reveal('.home__img',{delay: 500});
+    rr.reveal('',{delay: 500});
 
     
