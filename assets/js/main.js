@@ -52,19 +52,6 @@ window.onload = function() {
     
 };
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const loadingSpinner = document.getElementById("loading-spinner");
-    const pageContent = document.getElementById("page-content");
-
-    // Hide the loading spinner and show the page content when the page has loaded
-    window.addEventListener("load", function () {
-        loadingSpinner.style.display = "none";
-        pageContent.style.display = "block";
-    });
-});
-
-
 /*===== NAV BAR =====*/
 // const nav = document.querySelector('.nav__list'),
 //     navList = nav.querySelectorAll('li'),
